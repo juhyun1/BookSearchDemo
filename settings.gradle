@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    plugins {
+        id 'com.android.application' version '7.1.3'
+        id 'com.android.library' version '7.1.3'
+        id 'org.jetbrains.kotlin.android' version '1.6.21'
+        id 'org.jetbrains.kotlin.multiplatform' version '1.6.10'
+        id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.10'
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "BookSearch"
+include ':app'
+include ':core-model'
+include ':core-common'
+include ':core-ui'
+include ':core-data'
+include ':core-network'
+include ':feature-splash'
+include ':feature-search'
