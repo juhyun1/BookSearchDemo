@@ -14,16 +14,7 @@ import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 
 @Composable
-fun SplashScreenBody(navigateBookSearch: () -> Unit) {
-
-    val vm: SplashViewModel = hiltViewModel()
-    val state by vm.done
-
-    LaunchedEffect(key1 = state) {
-        if (state) {
-            navigateBookSearch()
-        }
-    }
+fun SplashScreenBody() {
 
     val composition by rememberLottieComposition(
         LottieCompositionSpec.RawRes(R.raw.background)

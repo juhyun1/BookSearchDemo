@@ -6,6 +6,7 @@ object Dependencies {
     const val androidLifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.LIFECYCLE_KTX}"
     const val androidActivityKtx = "androidx.activity:activity-ktx:${Versions.ACTIVITY_KTX}"
     const val androidAppcompat = "androidx.appcompat:appcompat:${Versions.APPCOMPAT}"
+    const val androidPaging = "androidx.paging:paging-runtime-ktx:${Versions.PAGING}"
 
     //Compose
     const val androidComposeRuntime = "androidx.compose.runtime:runtime:${Versions.COMPOSE}"

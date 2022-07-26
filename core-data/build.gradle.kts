@@ -60,6 +60,7 @@ dependencies {
     implementation(Dependencies.androidLifecycleRuntimeKtx)
     implementation(Dependencies.androidActivityKtx)
     implementation(Dependencies.androidAppcompat)
+    implementation(Dependencies.androidPaging)
 
     // Hilt dependencies
     implementation(Dependencies.androidHiltAndroid)
@@ -89,6 +90,9 @@ dependencies {
     implementation(Dependencies.libRetrofit)
     implementation(Dependencies.libRetrofitConverterGson)
     implementation(Dependencies.libRetrofitKotlinCoroutinesAdapter)
+
+    //Sandwich
+    implementation(Dependencies.libSandwich)
 
     // Logger
     implementation(Dependencies.libTimber)

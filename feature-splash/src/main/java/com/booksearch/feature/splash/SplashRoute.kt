@@ -6,5 +6,5 @@ import androidx.compose.runtime.Composable
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun SplashRoute(navigateBookSearch: () -> Unit) {
-    SplashScreenBody(navigateBookSearch = navigateBookSearch)
+    SplashScreenBody()
 }

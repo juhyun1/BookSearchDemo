@@ -95,6 +95,9 @@ dependencies {
     implementation(Dependencies.libRetrofitConverterGson)
     implementation(Dependencies.libRetrofitKotlinCoroutinesAdapter)
 
+    //Sandwich
+    implementation(Dependencies.libSandwich)
+
     // Logger
     implementation(Dependencies.libTimber)
 

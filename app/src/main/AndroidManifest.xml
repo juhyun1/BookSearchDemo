@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.booksearch">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".BaseApplication"
         android:allowBackup="true"
@@ -24,6 +26,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.booksearch.feature.details.DetailsActivity"
+            android:theme="@style/Theme.BookSearch.NoActionBar">
         </activity>
     </application>
 

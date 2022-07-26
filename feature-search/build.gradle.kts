@@ -60,6 +60,7 @@ dependencies {
     implementation(Dependencies.androidLifecycleRuntimeKtx)
     implementation(Dependencies.androidActivityKtx)
     implementation(Dependencies.androidAppcompat)
+    implementation(Dependencies.androidPaging)
 
     // Compose
     implementation(Dependencies.androidComposeRuntime)
@@ -75,6 +76,7 @@ dependencies {
     implementation(Dependencies.androidComposeActivityCompose)
     implementation(Dependencies.androidComposeNavigationCompose)
     implementation(Dependencies.androidComposeViewModelCompose)
+    implementation(Dependencies.androidComposePaging)
 
     // Hilt dependencies
     implementation(Dependencies.androidHiltAndroid)

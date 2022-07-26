@@ -20,6 +20,7 @@ import com.booksearch.R
 import com.booksearch.core.common.Navigation
 import com.booksearch.core.ui.component.TopAppBar
 import com.booksearch.core.ui.theme.BookSearchTheme
+import com.booksearch.feature.splash.SplashScreenBody
 import com.booksearch.navigation.NavHost
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
@@ -35,24 +36,33 @@ fun BookSearchApp(vm: MainViewModel) {
         val navBackStackEntry by navController.currentBackStackEntryAsState()
         val currentDestination = navBackStackEntry?.destination
 
-        Scaffold(
-            modifier = Modifier,
-            containerColor = Color.Transparent,
-            contentColor = MaterialTheme.colorScheme.onBackground,
-        ) { innerPadding ->
-            Row(
-                Modifier
-                    .fillMaxSize()
-                    .windowInsetsPadding(
-                        WindowInsets.safeDrawing.only(
-                            WindowInsetsSides.Horizontal
+        val state by vm.done
+
+        if (!state) {
+            SplashScreenBody()
+        } else{
+            Scaffold(
+                modifier = Modifier,
+                containerColor = Color.Transparent,
+                contentColor = MaterialTheme.colorScheme.onBackground,
+                topBar = {
+                    BookSearchTopBar()
+                },
+            ) { innerPadding ->
+                Row(
+                    Modifier
+                        .fillMaxSize()
+                        .windowInsetsPadding(
+                            WindowInsets.safeDrawing.only(
+                                WindowInsetsSides.Horizontal
+                            )
                         )
+                ) {
+                    NavHost(
+                        innerPadding = innerPadding,
+                        navController = navController,
                     )
-            ) {
-                NavHost(
-                    innerPadding = innerPadding,
-                    navController = navController,
-                )
+                }
             }
         }
     }

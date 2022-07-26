@@ -38,4 +38,7 @@ object Versions {
     const val KOTLINX_DATETIME = "0.3.2"
     const val SANDWICH = "1.2.4"
     const val LOTTIE = "5.2.0"
+    const val PAGING = "3.1.1"
+
+
 }

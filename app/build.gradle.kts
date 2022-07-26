@@ -122,5 +122,6 @@ dependencies {
     implementation(project(":core-data"))
     implementation(project(":feature-splash"))
     implementation(project(":feature-search"))
+    implementation(project(":feature-details"))
 }
 
